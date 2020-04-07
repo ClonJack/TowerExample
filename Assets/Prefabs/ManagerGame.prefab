@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8960180040612974816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8960180040612974818}
+  - component: {fileID: 8960180040612974817}
+  - component: {fileID: 8960180040612974819}
+  m_Layer: 0
+  m_Name: ManagerGame
+  m_TagString: Untagged
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8960180040612974818
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8960180040612974816}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.824757, y: 0.6198025, z: -10.0571375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8960180040612974817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8960180040612974816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45aa163c99aef374caeddc6d16e7d3c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _properties:
+  - Speed: 15
+    Hp: 999
+    Damage: 50
+    Money: 300
+    Prefab: {fileID: 3028896458022907482, guid: 0aed39a1165ee2a469b0f7c9914874b9,
+      type: 3}
+    Path:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - Speed: 15
+    Hp: 999
+    Damage: 50
+    Money: 300
+    Prefab: {fileID: 3028896458022907482, guid: 0aed39a1165ee2a469b0f7c9914874b9,
+      type: 3}
+    Path:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  _timeSpawner: 3
+  _startPoint: {fileID: 0}
+  _startTower:
+    Hp: 100
+    Damage: 50
+    TimeShot: 0.5
+    prefab: {fileID: 1697029570613846252, guid: ff7d4d1d260ec8c41936c50a8270722b,
+      type: 3}
+    NextUpHP: 5
+    NextUpDamage: 5
+  trade:
+    _tradeTxt: {fileID: 0}
+    _tradeCost: {fileID: 0}
+    _upGradeTxt: {fileID: 0}
+    _upGradeCost: {fileID: 0}
+    _buttonUpgrade: {fileID: 0}
+    _buttonSellAlsoBuild: {fileID: 0}
+    _canvas: {fileID: 0}
+    _player: {fileID: 8960180040612974819}
+    _build: 100
+    _sell: 50
+    _upGrade: 200
+  CurrentPlant: {fileID: 0}
+  tower: {fileID: 0}
+  currentsBot: []
+--- !u!114 &8960180040612974819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8960180040612974816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcd47992ea6af1f4ba88ec2567fe82ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sliderHp: {fileID: 0}
+  _hp: 100
+  _money: 300
+  _textMoney: {fileID: 0}
+  _panelOver: {fileID: 0}
