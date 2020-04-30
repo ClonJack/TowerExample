@@ -44,28 +44,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45aa163c99aef374caeddc6d16e7d3c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _properties:
-  - Speed: 15
-    Hp: 999
-    Damage: 50
-    Money: 300
-    Prefab: {fileID: 3028896458022907482, guid: 0aed39a1165ee2a469b0f7c9914874b9,
-      type: 3}
-    Path:
+  _startProperty:
+    Speed: 15
+    Hp: 15
+    Damage: 15
+    Money: 15
+    paths:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
-  - Speed: 15
-    Hp: 999
-    Damage: 50
-    Money: 300
-    Prefab: {fileID: 3028896458022907482, guid: 0aed39a1165ee2a469b0f7c9914874b9,
-      type: 3}
-    Path:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-  _timeSpawner: 3
+  NextWavetUpdate: 5
+  _waves: []
+  _timeSpawner: 1
+  _timeBetweenWave: 2
   _startPoint: {fileID: 0}
   _startTower:
     Hp: 100
@@ -75,21 +66,25 @@ MonoBehaviour:
       type: 3}
     NextUpHP: 5
     NextUpDamage: 5
-  trade:
+  Trade:
     _tradeTxt: {fileID: 0}
     _tradeCost: {fileID: 0}
-    _upGradeTxt: {fileID: 0}
-    _upGradeCost: {fileID: 0}
+    _upgradeTxt: {fileID: 0}
+    _upgradeCost: {fileID: 0}
     _buttonUpgrade: {fileID: 0}
     _buttonSellAlsoBuild: {fileID: 0}
     _canvas: {fileID: 0}
     _player: {fileID: 8960180040612974819}
     _build: 100
     _sell: 50
-    _upGrade: 200
+    _upgrade: 200
+  NextPriceUpdateTower: 5
   CurrentPlant: {fileID: 0}
   tower: {fileID: 0}
+  player: {fileID: 8960180040612974819}
   currentsBot: []
+  countWaves: 100
+  countBotInWaves: 15
 --- !u!114 &8960180040612974819
 MonoBehaviour:
   m_ObjectHideFlags: 0

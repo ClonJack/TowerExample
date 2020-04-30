@@ -30,7 +30,7 @@ public class Manager : MonoBehaviour
     public Transform CurrentPlant;
     [HideInInspector] public Tower tower;
 
-    public Player player => FindObjectOfType<Player>();
+    public Player player;
 
     public List<AI> currentsBot = new List<AI>();
 
@@ -47,7 +47,7 @@ public class Manager : MonoBehaviour
     public void DoTrade()
     {
 
-        if (Trade.TradeTxt.text.Equals("Build"))
+        if (Trade.TradeTxt.text== "Build")
         {
             var isBuild = Trade.Player.IsCompleteTrade(Trade.Biuld);
 
